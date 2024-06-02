@@ -11,7 +11,6 @@ class Game:
         if self.map[self.player.y][self.player.x] == 'X':
             raise ObstacleError()
 
-
     def print_map(self):
         m = [list(row) for row in self.map]
         m[self.player.y][self.player.x] = self.player.character
